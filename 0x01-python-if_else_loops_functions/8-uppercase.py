@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-# 7-islower.py
+# 8-uppercase.py
 
 
-def islower(c):
-    """Check for lowercase characters."""
-    if ord(c) >= 97 and ord(c) <= 122:
-        return True
-    else:
-        return False
+def uppercase(str):
+    """Print a string in uppercase."""
+    for c in str:
+        if ord(c) >= 97 and ord(c) <= 122:
+            c = chr(ord(c) - 32)
+        print("{}".format(c), end="")
+    print("")
